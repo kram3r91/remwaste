@@ -24,7 +24,7 @@ const router = createBrowserRouter([
 		children: [
 			{
 				index: true,
-				element: <SelectSkip />,
+				element: <Payment />,
 			},
 			{
 				path: 'permit-check',
@@ -35,8 +35,8 @@ const router = createBrowserRouter([
 				element: <ChooseDate />,
 			},
 			{
-				path: 'payment',
-				element: <Payment />,
+				path: 'select-skip',
+				element: <SelectSkip />,
 			},
 			{
 				path: 'postcode',
