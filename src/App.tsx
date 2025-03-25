@@ -1,26 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {
+	HomeLayout,
+	SelectSkip,
+	PermitCheck,
+	ChooseDate,
+	Payment,
+	Postcode,
+	WasteType,
+} from './pages';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export const checkDefaultTheme = () => {
+	const isDarkTheme = localStorage.getItem('darkTheme') === 'true';
+	document.body.classList.toggle('dark-theme', isDarkTheme);
+	return isDarkTheme;
+};
 
+checkDefaultTheme();
+
+const router = createBrowserRouter([
+	{
+		path: '/',
+		element: <HomeLayout />,
+		children: [
+			{
+				index: true,
+				element: <SelectSkip />,
+			},
+			{
+				path: 'permit-check',
+				element: <PermitCheck />,
+			},
+			{
+				path: 'choose-date',
+				element: <ChooseDate />,
+			},
+			{
+				path: 'payment',
+				element: <Payment />,
+			},
+			{
+				path: 'postcode',
+				element: <Postcode />,
+			},
+			{
+				path: 'waste-type',
+				element: <WasteType />,
+			},
+		],
+	},
+]);
+
+export const App = () => {
+	return <RouterProvider router={router} />;
+};
 export default App;
