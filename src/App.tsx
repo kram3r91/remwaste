@@ -24,7 +24,7 @@ const router = createBrowserRouter([
 		children: [
 			{
 				index: true,
-				element: <Payment />,
+				element: <Postcode />,
 			},
 			{
 				path: 'permit-check',
@@ -39,8 +39,8 @@ const router = createBrowserRouter([
 				element: <SelectSkip />,
 			},
 			{
-				path: 'postcode',
-				element: <Postcode />,
+				path: 'payment',
+				element: <Payment />,
 			},
 			{
 				path: 'waste-type',
