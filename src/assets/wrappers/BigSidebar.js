@@ -16,6 +16,7 @@ const Wrapper = styled.aside`
 		.content {
 			position: sticky;
 			top: 0;
+			z-index: 1;
 		}
 		.show-sidebar {
 			margin-left: 0;
