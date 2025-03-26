@@ -18,3 +18,10 @@ Use the data from this link to populate the skip options https://app.wewantwaste
 -   React Router DOM
 -   React Icons
 -   Dummy Data
+-   Local storage to save on localhost theme version
+
+### Refactor for 3 screens
+
+-   Postcode
+-   Waste Type
+-   Select Skip

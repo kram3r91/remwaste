@@ -1,5 +1,4 @@
 import NavLinks from './NavLinks';
-import Logo from '../components/Logo';
 import Wrapper from '../assets/wrappers/BigSidebar';
 import { useHomeLayoutContext } from '../pages/HomeLayout';
 

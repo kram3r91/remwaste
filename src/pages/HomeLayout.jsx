@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from 'react';
-import { Outlet, useNavigate } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import { checkDefaultTheme } from '../App';
 
 // assets
@@ -10,7 +10,6 @@ import { BigSidebar, SmallSidebar, Navbar } from '../components';
 
 const HomeLayoutContext = createContext();
 const HomeLayout = () => {
-	const navigate = useNavigate();
 	const [showSidebar, setShowSidebar] = useState(false);
 	const [isDarkTheme, setIsDarkTheme] = useState(checkDefaultTheme());
 

@@ -1,7 +1,6 @@
 import Wrapper from '../assets/wrappers/SmallSidebar';
 import { useHomeLayoutContext } from '../pages/HomeLayout';
 import { FaTimes } from 'react-icons/fa';
-import Logo from './Logo';
 import NavLinks from './NavLinks';
 
 const SmallSidebar = () => {

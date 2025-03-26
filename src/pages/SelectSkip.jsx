@@ -44,9 +44,7 @@ const SelectSkip = () => {
 									className={`card-container ${
 										privateProperty ? 'disabled' : ''
 									}`}
-									onClick={() => (
-										setSkip(select), console.log(skip)
-									)}
+									onClick={() => setSkip(select)}
 								>
 									<header className="card-header">
 										<img
