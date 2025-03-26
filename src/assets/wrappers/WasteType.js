@@ -68,5 +68,15 @@ const Wrapper = styled.section`
 	.waste-type-buttons .btn-disabled {
 		cursor: pointer;
 	}
+	@media (max-width: 992px) {
+		article {
+			flex: 100%;
+		}
+	}
+	@media (max-width: 640px) {
+		.article-services-item {
+			flex: 100%;
+		}
+	}
 `;
 export default Wrapper;
