@@ -1,46 +1,20 @@
-# Getting Started with Create React App
+# RemWaste Code Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Process:
 
-## Available Scripts
+We’ve provided a basic front-end page: Go to https://wewantwaste.co.uk/ then enter the postcode LE10 1SH and select an address, then select garden waste. On the next page you will see a skip select page which is the target page which we want you to redesign.
 
-In the project directory, you can run:
+Your goal is to redesign the look and feel while keeping its functionality intact.
 
-### `npm start`
+Focus on clean, maintainable react code, responsiveness, and UI/UX improvements.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+You need to incorporate the page to display correctly on mobile web browser and desktop
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Use the data from this link to populate the skip options https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft
 
-### `npm test`
+## Tech used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+-   ReactJS - typescript
+-   React Router DOM
+-   React Icons
+-   Dummy Data
